@@ -1,0 +1,31 @@
+
+  <!-- Article Section -->
+  <div class="container article-container mt-5">
+    <div class="row">
+      <div class="col-lg-12">
+      <?php
+                            $n=1; foreach($produk as $data)
+                            {?>
+          <div class="article-card mb-4">
+          <img src="<?php echo base_url() ?>assets/gallery/<?php echo $data->gambar_produk ?>" class="card-img-top" alt="..." width="50%" height="40%">
+
+            <div class="article-card-body">
+              <h2><?php echo $data->nama_produk ?></h2>
+              <p><small>Kategori Berita: <?php echo $data->nama_kategori_produk ?></small></p>
+              <p align="justify"><?php echo $data->isi_produk ?></p>
+              <p style="text-align: justify;">
+                  <?php echo substr($data->isi_produk, 0, 200); ?>...
+                </p>
+                <a href="<?php echo base_url()?>index.php/Beranda/Produk/<?php echo $data->id_produk ?>" class="btn btn-primary">Baca Selengkapnya</a>
+              </article>
+            </div>
+          </div>
+        </div>
+        <?php } ?>
+           // end foreach
+        ?>
+      </div>
+    </div>
+
+  </div>
+

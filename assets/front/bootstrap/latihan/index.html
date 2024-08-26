@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tag -->
+    <!-- Tag meta untuk menentukan karakter encoding yang digunakan, biasanya UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Tag meta untuk melakukan skala secara responsive terhadap view post -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script></script>
+    <title>Belajar Boostrap</title>
+</head>
+<body>
+    <marquee behavior="" direction="">  <h1>Selamat datang di Universitas Subang</h1>
+        <span id="tanggalwaktu"></span>
+        <script>
+        var tw = new Date();
+        if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+        else (a=tw.getTime());
+        tw.setTime(a);
+        var tahun= tw.getFullYear ();
+        var hari= tw.getDay ();
+        var bulan= tw.getMonth ();
+        var tanggal= tw.getDate ();
+        var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+        var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember");
+        document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun+"  " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10)? "0" : "") + tw.getMinutes() + (" WIB ");
+        </script></marquee>
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1" bg-secondary>col-md-1</div>
+            <div class="col-md-1 bg-light p-3 border">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div> <div class="col-3 bg-light p-3 border"></div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+        </div>
+        <div class="row">
+            <div class="col-md-8"> col md 8</div>
+                <div class="col-md-4">col md 4</div>       
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">col md 4</div>
+            <div class="col-md-4">col md 4</div>
+            <div class="col-md-4">col md 4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">col md 6</div>
+            <div class="col-md-6">col md 6</div>
+        </div>
+        <br><br><br>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><h1>Heading 1</h1></div>
+                <div class="col-md-4"><h1>Heading 1</h1></div>
+                <div class="col-md-4"><h1>Heading 1</h1></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><h1>Untuk sisi konten</h1></div>
+                <div class="col-md-6"><h1>Untuk sisi konten</h1></div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">asdfghjk</div>
+            </div>
+        </div>
+</header>
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
